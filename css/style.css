@@ -1,0 +1,36 @@
+@media(min-width: 768px)  {
+    .news-input {
+        width: 50%;
+    }
+}
+
+.bodyOf {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, white, blue, black);
+}
+
+.bgothers {
+    background-image: linear-gradient(to bottom, white, blue, black);
+    border: 2px solid black !important;
+}
+
+#navigation .navbar-brand:hover {
+    color: blue;
+}
+
+#like:hover {
+    color: red;
+}
+
+.shar:hover {
+    color: blue !important;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* .ps {
+    top: 15px;
+    z-index: 50;
+} */

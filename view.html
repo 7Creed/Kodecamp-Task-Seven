@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/b353e23091.js" crossorigin="anonymous"></script>
+    <title>CodeCamp</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <setion id="navigation">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+            <div class="container">
+                <a href="Index.html" class="navbar-brand">CodeCamp</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#learn" class="nav-link">All posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Questions" class="nav-link">Latest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#Instructors" class="nav-link">People</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </setion>
+
+
+    <div class="section container-fluid bodyOf mt-5">
+        <div class="container d-flex justify-content-end">
+            <a href="Index.html">
+                <button class="btn btn-danger get-post my-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    <i class="bi bi-x text-light "></i>
+                </button>
+            </a>
+        </div>
+        
+        <div class="col-7 mx-auto pb-5">
+            <div class="card border-0 bgothers p-4 mb-5">
+                <div class="d-flex flex-column justify-content-between align-items-center">
+                    <h3 class="id text-light post-id d-none"></h3>
+                    <h3 class="text-dark title display-6 fw-bolder mb-3 post-title"></h3>
+                </div>
+                <div class="mt-2">
+                    <p class="body text-justify text-light fs-3 post-body"></p>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-4 border-top border-light px-4">
+                    <a href="Index.html"><button class="btn btn-light mt-3">Back</button></a>
+                    <button class="border-0 bg-transparent" id="view-btn"><i class="fa-solid fa-heart fs-1 likeIt" id="like"></i></button>
+                    <button class="border-0 bg-transparent"><i class="fa-solid fa-share text-light fs-1 shar"></i></button>
+                </div>
+            </div>
+            <div class="rowPost">
+            
+            </div>
+       </div>
+    </div>
+
+
+
+    <!-- section3 -->
+    <section id="section-3" class="pt-">
+        
+    </section>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/view.js"></script>
+
+</body>
+</html>

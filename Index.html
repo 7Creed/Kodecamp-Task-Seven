@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>CampCode</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <setion id="navigation">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+            <div class="container">
+                <a href="#" class="navbar-brand">CampCode</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" >All posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" >Latest</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" >People</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </setion>
+
+    <!-- showcase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>What are your <span class="text-warning">Thoughts Today</span> <span class="text-danger display-3">?</span></h1>
+                    <p class="lead my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nihil quos, fuga vero nostrum quibusdam animi quasi dicta, maxime, nesciunt perferendis ex fugiat.</p>
+                    <a href="profile.html">
+                        <button class="btn btn-primary btn-lg">View Profile</button>
+                    </a>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="/img/undraw_social_influencer_re_beim.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- newsletter -->
+    <section class="bg-primary text-light p-5">
+        <div class="container-fluid">
+            <div class="text-center">
+                <h3 class="mb-3 mb-md-0 text-center text-decoration-underline">News Feed</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mx-auto col-md-6 col-sm-12 pt-5">
+                    <div class="card w-75 head mx-auto border-2 p-4 bg-light rounded">
+                        <div class="news-feed mb-5 bg-dark text-light w-75 mx-auto px-3 d-flex justify-content-between">
+                        </div>
+                        <div class="form-section">
+                            <form action="" id="postform" class="border border-primary text-dark d-grid gap-3 px-3 pt-4 pb-3">
+                                <div>
+                                    <h5>Post A Message</h5>
+                                </div>
+                                <div class="form-floating border border-primary">
+                                    <input type="name" class="form-control title" id="floatingInput title" placeholder="enter your name">
+                                    <label for="floatingInput" class="holder">Title</label>
+                                </div>
+                                <div class="form-floating border border-primary">
+                                    <textarea name="query" style="height: 150px" class="form-control body" placeholder="Write a message" id="query"></textarea>
+                                    <label for="query" class="holder">Comments</label>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button type="submit" class="btn btn-secondary btn-lg px-4 fs-6" id="post-form">Post</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 mx-auto col-md-6 col-sm-12 mt-5 position-relative" style="height: 500px; overflow: scroll;">
+                    <div class="section container-fluid bodyOf">
+                        <div class="text-start">
+                            <button class="btn btn-dark get-post py-4 px-5 my-4">Get Post</button>
+                        </div>
+                        
+                        <div class="col-10 mx-auto">
+                            <div class="card border-0 bgothers p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h3 class="id text-light">01</h3>
+                                    <h3 class="text-light title">Chima Obika</h3>
+                                </div>
+                                <div class="mt-2">
+                                    <h6 class="body text-justify text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate vero reiciendis doloribus deserunt fugit, nisi aut. Ipsam quae nemo fugit hic dolorum debitis nesciunt laudantium voluptatibus obcaecati, magni fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate vero reiciendis doloribus deserunt fugit, nisi aut. Ipsam quae nemo fugit hic dolorum debitis nesciunt laudantium voluptatibus obcaecati, magni fugiat!</h6>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <button id="update-post" onclick="updateMe()" class="btn btn-light">Update</button>
+                                    <button id="view-post" class="btn btn-dark border border-2 border-light text-light">View Post</button>
+                                    <button id="delete-post" class="btn btn-danger">Delete</button>
+                                </div>
+                            </div>
+                            <div class="rowPost">
+                            
+                            </div>
+                       </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="div1"></div>
+    </section>
+
+    <!-- <div class="section container-fluid bodyOf">
+        <div class="text-center">
+            <button class="btn btn-dark get-post py-4 px-5 my-4">Get Post</button>
+        </div>
+        
+        <div class="col-8 mx-auto">
+            <div class="card border-0 bgothers p-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="id text-light">01</h3>
+                    <h3 class="text-light title">Chima Obika</h3>
+                </div>
+                <div class="mt-2">
+                    <h6 class="body text-justify text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate vero reiciendis doloribus deserunt fugit, nisi aut. Ipsam quae nemo fugit hic dolorum debitis nesciunt laudantium voluptatibus obcaecati, magni fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate vero reiciendis doloribus deserunt fugit, nisi aut. Ipsam quae nemo fugit hic dolorum debitis nesciunt laudantium voluptatibus obcaecati, magni fugiat!</h6>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <button id="update-post" onclick="updateMe()" class="btn btn-light">Update</button>
+                    <button id="view-post" class="btn btn-dark border border-2 border-light text-light">View Post</button>
+                    <button id="delete-post" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+            <div class="rowPost">
+            
+            </div>
+       </div>
+    </div> -->
+    
+    
+  
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+ 
