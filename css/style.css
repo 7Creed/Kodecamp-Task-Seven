@@ -34,3 +34,31 @@
     top: 15px;
     z-index: 50;
 } */
+
+
+
+@media (max-width: 426px) {
+
+    .container-fluid {
+        width: 95% !important;
+    }
+
+    .container-fluid .row {
+        margin: 0;
+        width: 100% !important;
+    }
+
+    .rounded, .sec {
+        padding: 0 !important;
+    }
+
+    .w-75 {
+        width: 100% !important;
+    }
+
+    .bgothers .px-4 {
+        padding: 0 !important;
+    }
+
+    px-4
+}
